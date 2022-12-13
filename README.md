@@ -2,9 +2,7 @@
 
 > **commercial development**
 
-https://www.phytosterol-forte.ru/
-
-one-page site for the sale of dietary supplements.
+One-page site for the sale of dietary supplements ([Phytosterol Forte](https://www.phytosterol-forte.ru/)).
 
 ### Features<br>
 - YuKassa payment system integration
