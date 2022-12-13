@@ -1,31 +1,26 @@
 <script>
-import MainHeader from "./components/MainHeader.vue";
-import MainFooter from "./components/MainFooter.vue";
+import MainHeader from "./components/Main/MainHeader.vue";
+import MainFooter from "./components/Main/MainFooter.vue";
+import MainMessengers from "./components/Main/MainMessengers.vue";
 
 export default {
   components: {
     MainHeader,
     MainFooter,
+    MainMessengers,
   },
 };
 </script>
 
 <template>
   <MainHeader></MainHeader>
-  <div class="div_background">
-    <p class="p__text">Hello!</p>
-  </div>
-  <h1>world</h1>
-
-  <h2>champion</h2>
+  <RouterView />
   <MainFooter></MainFooter>
+
+  <MainMessengers></MainMessengers>
 </template>
 
 <style lang="scss">
+@import "@/assets/styles/base.scss";
 @import "@/assets/styles/fonts.scss";
-@import "@/assets/styles/variables.scss";
-
-h2 {
-  color: $bg-color1;
-}
 </style>

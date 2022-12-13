@@ -1,0 +1,145 @@
+.composition {
+  background: linear-gradient(
+    to left,
+    $color-main-opacity-7 58%,
+    transparent 42%
+  );
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-side {
+    padding-top: 94px;
+    padding-bottom: 73px;
+  }
+  &__title {
+    max-width: 280px;
+    padding-bottom: 22px;
+  }
+
+  &__right-side {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+    margin-right: 23px;
+    background: $color-main;
+    border: 5px solid $color-light;
+    border-radius: 50px;
+    box-shadow: $shadow-circle;
+  }
+  &__item-icon {
+    height: 45px;
+    width: 45px;
+    fill: $color-light;
+  }
+  &__item-title {
+    margin-bottom: 8px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__item-text {
+    max-width: 375px;
+  }
+  &__right-image {
+    //     display: block;
+    height: 333px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .composition {
+    background: linear-gradient(
+      to left,
+      rgba(211, 46, 58, 0.07) 61%,
+      transparent 49%
+    );
+    &__right-side {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .composition {
+    background: linear-gradient(
+      to left,
+      rgba(211, 46, 58, 0.07) 54%,
+      transparent 46%
+    );
+
+    &__right-image {
+      display: none;
+    }
+    &__right-side {
+      margin-right: 70px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .composition {
+    background: linear-gradient(
+      to left,
+      rgba(211, 46, 58, 0.07) 52%,
+      transparent 48%
+    );
+
+    // &__right-image {
+    //   display: none;
+    // }
+    &__left-image {
+      width: 90%;
+    }
+    &__right-side {
+      margin-right: 0;
+    }
+    &__icon-background {
+      margin-right: 15px;
+    }
+    &__item-text {
+      max-width: 355px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .composition {
+    background: $color-main-opacity-7;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__left-side {
+      text-align: center;
+    }
+    &__title {
+      margin: 0 auto;
+    }
+    &__items {
+      margin-bottom: 100px;
+    }
+    &__item-icon {
+      box-sizing: content-box;
+      padding: 10px;
+    }
+  }
+}

@@ -1,9 +1,16 @@
-$bg-color1: #ffee00;
+$color-main: #d32e3a;
+$color-dark: #222222;
+$color-light: #ffffff;
+$color-yellow: #f9c300;
+$color-main-pink: #fcf0f1;
+$color-gray: #999999;
+$color-main-opacity-7: rgba(211, 46, 58, 0.07);
+$color-main-opacity-70: rgba(211, 46, 58, 0.7);
+$color-main-opacity-90: rgba(211, 46, 58, 0.9);
+$color-dark-opacity-7: rgba(34, 34, 34, 0.07);
+$color-dark-opacity-60: rgba(34, 34, 34, 0.6);
 
-$main-color: #D32E3A;
-$text-color-dark: #222222;
-$text-color-light: #ffffff;
+$color-text-dark: #222222;
+$color-text-light: #ffffff;
 
-h1 {
-  color: rgb(218, 26, 224);
-}
+$shadow-circle: 0px 12px 36px rgba(0, 0, 0, 0.06);

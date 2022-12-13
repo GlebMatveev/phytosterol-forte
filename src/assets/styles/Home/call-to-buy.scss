@@ -1,0 +1,81 @@
+.call-to-buy {
+  padding: 110px 0;
+  background: linear-gradient($color-main-opacity-90, $color-main-opacity-90),
+    url(../../img/call-to-buy/background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    color: $color-light;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    background: $color-light;
+    border-radius: 45px;
+
+    transition: 0.2s;
+  }
+  &__button:hover {
+    background: $color-dark;
+  }
+  &__button:hover &__button-img {
+    fill: $color-light;
+  }
+  &__button:hover &__button-text {
+    color: $color-light;
+  }
+  &__button-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px 13px 15px 30px;
+
+    fill: $color-text-dark;
+  }
+  &__button-text {
+    color: $color-text-dark;
+
+    margin-right: 41px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .call-to-buy {
+    &__title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .call-to-buy {
+    background: $color-main-opacity-90;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__title {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+}

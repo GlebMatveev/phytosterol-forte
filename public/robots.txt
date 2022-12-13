@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+User-Agent: Yandex
+Disallow:
+
+Sitemap: https://phytosterol-forte.ru/sitemap.xml

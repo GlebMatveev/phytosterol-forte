@@ -1,0 +1,131 @@
+.advantages {
+  text-align: center;
+
+  &__title-block {
+    position: relative;
+  }
+  &__title-spirit {
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 101px;
+
+    color: $color-dark-opacity-7;
+  }
+  &__title {
+    padding-top: 157px;
+    padding-bottom: 14px;
+  }
+  &__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: $color-main;
+  }
+
+  &__card-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 84px;
+    margin-bottom: 150px;
+  }
+  &__card {
+    position: relative;
+    max-width: 385px;
+    padding: 60px 30px 45px 30px;
+    border: 1px solid $color-dark-opacity-7;
+    margin-bottom: 24px;
+  }
+
+  &__card:hover {
+    border-top: 13px solid $color-main;
+    padding-top: 48px;
+
+    background: linear-gradient($color-dark-opacity-60, $color-dark-opacity-60),
+      url(../../img/advantages/background.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+
+    cursor: pointer;
+  }
+  &__card:hover &__card-icon {
+    display: none;
+  }
+  &__card:hover &__card-title {
+    color: $color-light;
+  }
+  &__card:hover &__card-text {
+    color: $color-light;
+  }
+
+  &__card-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 196px;
+    width: 196px;
+
+    fill: $color-main-opacity-7;
+  }
+  &__card-title {
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  &__card-text {
+    text-align: left;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .advantages {
+    &__card {
+      max-width: 290px;
+    }
+    &__card-title {
+      min-height: 48px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    &__card-block {
+      margin-top: 64px;
+    }
+    &__card {
+      max-width: 354px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .advantages {
+    &__title-spirit {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__title {
+      padding-top: 140px;
+    }
+    &__card-block {
+      margin-bottom: 110px;
+      justify-content: center;
+    }
+  }
+}

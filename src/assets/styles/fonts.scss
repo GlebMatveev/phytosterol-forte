@@ -1,160 +1,537 @@
+/* Manrope */
+
 @font-face {
-	font-family: 'Geometria';
-	src: url('../fonts/Geometria/geometria.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria.svg#geometria') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Bold.eot");
+  src: local("Manrope Bold"), local("Manrope-Bold"),
+    url("../fonts/Manrope/Manrope-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Bold.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-Bold';
-	src: url('../fonts/Geometria/geometria-bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-bold.svg#geometria-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Semibold.eot");
+  src: local("Manrope Semibold"), local("Manrope-Semibold"),
+    url("../fonts/Manrope/Manrope-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Semibold.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Semibold.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-BoldItalic';
-	src: url('../fonts/Geometria/geometria-bolditalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-bolditalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-bolditalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-bolditalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-bolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-bolditalic.svg#geometria-bolditalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Regular.eot");
+  src: local("Manrope Regular"), local("Manrope-Regular"),
+    url("../fonts/Manrope/Manrope-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Regular.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-ExtraBold';
-	src: url('../fonts/Geometria/geometria-extrabold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-extrabold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-extrabold.svg#geometria-extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Light.eot");
+  src: local("Manrope Light"), local("Manrope-Light"),
+    url("../fonts/Manrope/Manrope-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Light.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Light.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-ExtraBoldItalic';
-	src: url('../fonts/Geometria/geometria-extrabolditalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-extrabolditalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-extrabolditalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-extrabolditalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-extrabolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-extrabolditalic.svg#geometria-extrabolditalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Thin.eot");
+  src: local("Manrope Thin"), local("Manrope-Thin"),
+    url("../fonts/Manrope/Manrope-Thin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Thin.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Thin.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-ExtraLight';
-	src: url('../fonts/Geometria/geometria-extralight.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-extralight.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-extralight.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-extralight.svg#geometria-extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-Medium.eot");
+  src: local("Manrope Medium"), local("Manrope-Medium"),
+    url("../fonts/Manrope/Manrope-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Medium.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-ExtraLightItalic';
-	src: url('../fonts/Geometria/geometria-extralightitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-extralightitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-extralightitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-extralightitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-extralightitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-extralightitalic.svg#geometria-extralightitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Manrope";
+  src: url("../fonts/Manrope/Manrope-ExtraBold.eot");
+  src: local("Manrope ExtraBold"), local("Manrope-ExtraBold"),
+    url("../fonts/Manrope/Manrope-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Manrope/Manrope-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-ExtraBold.woff") format("woff"),
+    url("../fonts/Manrope/Manrope-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Montserrat */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ExtraLight.eot");
+  src: local("Montserrat ExtraLight"), local("Montserrat-ExtraLight"),
+    url("../fonts/Montserrat/Montserrat-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-ExtraLight.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-Heavy';
-	src: url('../fonts/Geometria/geometria-heavy.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-heavy.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-heavy.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-heavy.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-heavy.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-heavy.svg#geometria-heavy') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-MediumItalic.eot");
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"),
+    url("../fonts/Montserrat/Montserrat-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-MediumItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'Geometria-HeavyItalic';
-	src: url('../fonts/Geometria/geometria-heavyitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-heavyitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-heavyitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-heavyitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-heavyitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-heavyitalic.svg#geometria-heavyitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Italic.eot");
+  src: local("Montserrat Italic"), local("Montserrat-Italic"),
+    url("../fonts/Montserrat/Montserrat-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Italic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Italic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'Geometria-Italic';
-	src: url('../fonts/Geometria/geometria-italic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-italic.svg#geometria-italic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/Montserrat/Montserrat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-Light';
-	src: url('../fonts/Geometria/geometria-light.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-light.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-light.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-light.svg#geometria-light') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ThinItalic.eot");
+  src: local("Montserrat Thin Italic"), local("Montserrat-ThinItalic"),
+    url("../fonts/Montserrat/Montserrat-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-ThinItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-ThinItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
 }
 
 @font-face {
-	font-family: 'Geometria-LightItalic';
-	src: url('../fonts/Geometria/geometria-lightitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-lightitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-lightitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-lightitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-lightitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-lightitalic.svg#geometria-lightitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/Montserrat/Montserrat-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-Medium';
-	src: url('../fonts/Geometria/geometria-medium.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-medium.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-medium.svg#geometria-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Light.eot");
+  src: local("Montserrat Light"), local("Montserrat-Light"),
+    url("../fonts/Montserrat/Montserrat-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-MediumItalic';
-	src: url('../fonts/Geometria/geometria-mediumitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-mediumitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-mediumitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-mediumitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-mediumitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-mediumitalic.svg#geometria-mediumitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Black.eot");
+  src: local("Montserrat Black"), local("Montserrat-Black"),
+    url("../fonts/Montserrat/Montserrat-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Black.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Black.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-Thin';
-	src: url('../fonts/Geometria/geometria-thin.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-thin.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-thin.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-thin.svg#geometria-thin') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Medium.eot");
+  src: local("Montserrat Medium"), local("Montserrat-Medium"),
+    url("../fonts/Montserrat/Montserrat-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Geometria-ThinItalic';
-	src: url('../fonts/Geometria/geometria-thinitalic.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Geometria/geometria-thinitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/Geometria/geometria-thinitalic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/Geometria/geometria-thinitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/Geometria/geometria-thinitalic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/Geometria/geometria-thinitalic.svg#geometria-thinitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ExtraLightItalic.eot");
+  src: local("Montserrat ExtraLight Italic"),
+    local("Montserrat-ExtraLightItalic"),
+    url("../fonts/Montserrat/Montserrat-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-ExtraLightItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-ExtraLightItalic.ttf")
+      format("truetype");
+  font-weight: 200;
+  font-style: italic;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-BlackItalic.eot");
+  src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"),
+    url("../fonts/Montserrat/Montserrat-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-BlackItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.eot");
+  src: local("Montserrat ExtraBold Italic"), local("Montserrat-ExtraBoldItalic"),
+    url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.eot");
+  src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"),
+    url("../fonts/Montserrat/Montserrat-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-SemiBoldItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.eot");
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"),
+    url("../fonts/Montserrat/Montserrat-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-BoldItalic.eot");
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"),
+    url("../fonts/Montserrat/Montserrat-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-BoldItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-LightItalic.eot");
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"),
+    url("../fonts/Montserrat/Montserrat-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-LightItalic.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-LightItalic.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"),
+    url("../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Thin.eot");
+  src: local("Montserrat Thin"), local("Montserrat-Thin"),
+    url("../fonts/Montserrat/Montserrat-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/Montserrat-Thin.woff2") format("woff2"),
+    url("../fonts/Montserrat/Montserrat-Thin.woff") format("woff"),
+    url("../fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Geometria */
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Regular.eot");
+  src: local("Geometria Regular"), local("Geometria-Regular"),
+    url("../fonts/Geometria/Geometria-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Regular.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Regular.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Italic.eot");
+  src: local("Geometria Italic"), local("Geometria-Italic"),
+    url("../fonts/Geometria/Geometria-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Italic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Italic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-ExtraBoldItalic.eot");
+  src: local("Geometria ExtraBold Italic"), local("Geometria-ExtraBoldItalic"),
+    url("../fonts/Geometria/Geometria-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-ExtraBoldItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-ExtraBoldItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-ExtraLightItalic.eot");
+  src: local("Geometria ExtraLight Italic"), local("Geometria-ExtraLightItalic"),
+    url("../fonts/Geometria/Geometria-ExtraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-ExtraLightItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-ExtraLightItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Medium.eot");
+  src: local("Geometria Medium"), local("Geometria-Medium"),
+    url("../fonts/Geometria/Geometria-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Medium.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Medium.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Light.eot");
+  src: local("Geometria Light"), local("Geometria-Light"),
+    url("../fonts/Geometria/Geometria-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Light.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Light.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-HeavyItalic.eot");
+  src: local("Geometria Heavy Italic"), local("Geometria-HeavyItalic"),
+    url("../fonts/Geometria/Geometria-HeavyItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-HeavyItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-HeavyItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-BoldItalic.eot");
+  src: local("Geometria Bold Italic"), local("Geometria-BoldItalic"),
+    url("../fonts/Geometria/Geometria-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-BoldItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Bold.eot");
+  src: local("Geometria Bold"), local("Geometria-Bold"),
+    url("../fonts/Geometria/Geometria-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Bold.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Bold.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-LightItalic.eot");
+  src: local("Geometria Light Italic"), local("Geometria-LightItalic"),
+    url("../fonts/Geometria/Geometria-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-LightItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-LightItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-ExtraBold.eot");
+  src: local("Geometria ExtraBold"), local("Geometria-ExtraBold"),
+    url("../fonts/Geometria/Geometria-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-ExtraBold.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-MediumItalic.eot");
+  src: local("Geometria Medium Italic"), local("Geometria-MediumItalic"),
+    url("../fonts/Geometria/Geometria-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-MediumItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-ExtraLight.eot");
+  src: local("Geometria ExtraLight"), local("Geometria-ExtraLight"),
+    url("../fonts/Geometria/Geometria-ExtraLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-ExtraLight.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-ExtraLight.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Heavy.eot");
+  src: local("Geometria Heavy"), local("Geometria-Heavy"),
+    url("../fonts/Geometria/Geometria-Heavy.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Heavy.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Heavy.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-ThinItalic.eot");
+  src: local("Geometria Thin Italic"), local("Geometria-ThinItalic"),
+    url("../fonts/Geometria/Geometria-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-ThinItalic.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-ThinItalic.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria/Geometria-Thin.eot");
+  src: local("Geometria Thin"), local("Geometria-Thin"),
+    url("../fonts/Geometria/Geometria-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Geometria/Geometria-Thin.woff2") format("woff2"),
+    url("../fonts/Geometria/Geometria-Thin.woff") format("woff"),
+    url("../fonts/Geometria/Geometria-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

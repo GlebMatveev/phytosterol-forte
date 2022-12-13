@@ -1,0 +1,104 @@
+.call-to-feedback {
+  padding: 110px 0;
+  background: linear-gradient($color-main-opacity-90, $color-main-opacity-90),
+    url(../../img/call-to-feedback/background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn-cart {
+    margin-right: 48px;
+
+    display: flex;
+    align-items: center;
+    background: $color-light;
+    border-radius: 45px;
+
+    transition: 0.2s;
+  }
+  &__btn-cart:hover {
+    background: $color-dark;
+  }
+  &__btn-cart:hover &__btn-cart-img {
+    fill: $color-light;
+  }
+  &__btn-cart:hover &__btn-cart-text {
+    color: $color-light;
+  }
+  &__btn-cart-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px 13px 15px 30px;
+
+    fill: $color-text-dark;
+  }
+  &__btn-cart-text {
+    color: $color-text-dark;
+
+    margin-right: 41px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid $color-light;
+    border-radius: 45px;
+
+    transition: 0.2s;
+  }
+  &__btn:hover {
+    background: $color-dark;
+    border: 1px solid $color-dark;
+  }
+  &__btn:hover &__btn-cart-img {
+    fill: $color-light;
+  }
+  &__btn:hover &__btn-cart-text {
+    color: $color-light;
+  }
+  &__btn-text {
+    color: $color-text-light;
+    margin: 10px 30px 10px 30px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .call-to-feedback {
+    background: $color-main-opacity-90;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__btn-cart-img {
+      margin-left: 20px;
+    }
+    &__btn-cart {
+      max-width: 227px;
+      margin-bottom: 25px;
+      margin-right: 0;
+    }
+    &__btn-cart-text {
+      font-size: 24px;
+      line-height: 30px;
+      margin-right: 0;
+    }
+  }
+}

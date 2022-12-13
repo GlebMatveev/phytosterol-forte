@@ -1,0 +1,299 @@
+.prices {
+  &__title {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+  &__description {
+    text-align: center;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 200px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    outline: 1px solid $color-dark-opacity-7;
+    box-shadow: $shadow-circle;
+  }
+  &__topbar {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__topbar_gray {
+    background: $color-dark-opacity-7;
+  }
+  &__topbar_black {
+    background: $color-dark;
+  }
+  &__topbar_red {
+    background: $color-main;
+  }
+  &__topbar-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: $color-text-light;
+  }
+  &__card-title {
+    margin-top: 42px;
+    margin-bottom: 14px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $color-text-dark;
+  }
+  &__card-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: $color-main;
+  }
+  &__card-image {
+    margin-top: 42px;
+    margin-bottom: 28px;
+  }
+  &__card-price-block {
+    display: flex;
+    align-items: center;
+  }
+  &__card-price {
+    margin-right: 16px;
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: $color-text-dark;
+  }
+  &__card-price-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    color: $color-dark-opacity-60;
+  }
+  &__card-sum {
+    margin-top: 12px;
+    margin-bottom: 11px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $color-dark-opacity-60;
+  }
+  &__card-economy {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $color-main;
+  }
+
+  &__btn-gray {
+    margin-top: 34px;
+    margin-bottom: 42px;
+
+    display: flex;
+    align-items: center;
+    background: $color-light;
+    border-radius: 45px;
+
+    border: 1px solid $color-dark;
+
+    transition: 0.2s;
+  }
+  &__btn-gray:hover {
+    background: $color-dark;
+  }
+  &__btn-gray:hover &__btn-gray-img {
+    fill: $color-light;
+  }
+  &__btn-gray:hover &__btn-gray-text {
+    color: $color-light;
+  }
+  &__btn-gray-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px 13px 15px 30px;
+
+    fill: $color-text-dark;
+  }
+  &__btn-gray-text {
+    color: $color-text-dark;
+
+    margin-right: 41px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  &__btn-black {
+    margin-top: 34px;
+    margin-bottom: 42px;
+
+    display: flex;
+    align-items: center;
+    background: $color-dark;
+    border-radius: 45px;
+
+    transition: 0.2s;
+  }
+  &__btn-black:hover {
+    background: $color-main;
+  }
+  &__btn-black:hover &__btn-black-img {
+    fill: $color-light;
+  }
+  &__btn-black:hover &__btn-black-text {
+    color: $color-light;
+  }
+  &__btn-black-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px 13px 15px 30px;
+
+    fill: $color-text-light;
+  }
+  &__btn-black-text {
+    color: $color-text-light;
+
+    margin-right: 41px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+
+  &__btn-red {
+    margin-top: 34px;
+    margin-bottom: 42px;
+
+    display: flex;
+    align-items: center;
+    background: $color-main;
+    border-radius: 45px;
+
+    transition: 0.2s;
+  }
+  &__btn-red:hover {
+    background: $color-dark;
+  }
+  &__btn-red:hover &__btn-red-img {
+    fill: $color-light;
+  }
+  &__btn-red:hover &__btn-red-text {
+    color: $color-light;
+  }
+  &__btn-red-img {
+    height: 40px;
+    width: 40px;
+    margin: 15px 13px 15px 30px;
+
+    fill: $color-text-light;
+  }
+  &__btn-red-text {
+    color: $color-text-light;
+
+    margin-right: 41px;
+
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .prices {
+    &__card {
+      max-width: 300px;
+    }
+    &__topbar-text {
+      font-size: 18px;
+    }
+    &__card-image {
+      width: 90%;
+    }
+    &__btn-gray-img {
+      margin: 10px 13px 10px 30px;
+    }
+    &__btn-black-img {
+      margin: 10px 13px 10px 30px;
+    }
+    &__btn-red-img {
+      margin: 10px 13px 10px 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .prices {
+    &__container {
+      max-width: none;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &__cards {
+      overflow-x: auto;
+      padding: 5px 5px 35px 25px;
+      flex-wrap: nowrap;
+    }
+
+    &__card {
+      min-width: 380px;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .prices {
+    &__container {
+      max-width: none;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    &__title {
+      margin-top: 110px;
+    }
+    &__cards {
+      margin-bottom: 110px;
+      overflow-x: hidden;
+      padding: 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card {
+      min-width: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+      box-shadow: none;
+    }
+  }
+}

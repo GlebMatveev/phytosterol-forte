@@ -11,11 +11,11 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  // css: {
-  //   loaderOptions: {
-  //     sass: {
-  //       data: `@import "@/assets/styles/variables.scss";`,
-  //     },
-  //   },
-  // },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "@/assets/styles/variables.scss";`,
+      },
+    },
+  },
 });

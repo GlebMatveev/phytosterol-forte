@@ -1,0 +1,39 @@
+.messengers {
+  position: fixed;
+  //  position: absolute;
+  top: 25vh;
+  right: 30px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    display: flex;
+    background: $color-main;
+    padding: 16px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+
+    transition: 0.2s;
+  }
+
+  &__link:hover {
+    background: $color-dark;
+  }
+
+  &__link svg {
+    height: 24px;
+    width: 24px;
+
+    fill: $color-light;
+  }
+}
+
+@media (max-width: 425px) {
+  .messengers {
+    right: 10px;
+    &__link {
+      background: $color-main-opacity-70;
+    }
+  }
+}
