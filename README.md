@@ -1,7 +1,6 @@
 # phytosterol-forte
 
-> **commercial development**
-
+> **commercial development**<br>
 
 One-page site for the sale of dietary supplements ([Phytosterol Forte](https://phytosterol-forte.ru/)).
 
