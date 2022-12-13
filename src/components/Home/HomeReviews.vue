@@ -1,10 +1,8 @@
 <script>
-// import IconStar from "../Icons/IconStar.vue";
 import IconStarFilled from "../Icons/IconStarFilled.vue";
 
 export default {
   components: {
-    // IconStar,
     IconStarFilled,
   },
 };
